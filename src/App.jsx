@@ -21,8 +21,6 @@ export default function App() {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
-
-  console.log("Dark mode:", darkMode);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
