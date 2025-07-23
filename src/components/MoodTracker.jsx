@@ -5,7 +5,7 @@ import { MoodCalendar } from './MoodCalendar';
 import { MoodChart } from './MoodChart';
 export const MoodTracker = () => {
   const [moodLogs, setMoodLogs] = useState([]);
-  const [view, setView] = useState('calendar'); // 'calendar' or 'chart'
+  const [view, setView] = useState('calendar');
   useEffect(() => {
     const storedMoods = localStorage.getItem('moodLogs');
     if (storedMoods) {
@@ -14,7 +14,6 @@ export const MoodTracker = () => {
   }, []);
   const handleMoodSelect = (mood, note = '') => {
     const today = new Date().toISOString().split('T')[0];
-    // Check if we already have a mood for today
     const existingIndex = moodLogs.findIndex(log => log.date === today);
     let updatedLogs;
     if (existingIndex >= 0) {
