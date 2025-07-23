@@ -28,7 +28,6 @@ export const Dashboard = () => {
         </p>
       </div>
       <QuoteDisplay />
-      {/* The change is in the line below */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
           <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-200">
