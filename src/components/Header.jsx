@@ -37,9 +37,7 @@ export const Header = ({ activeTab, setActiveTab }) => {
       <p className="text-center text-gray-600 dark:text-gray-400 mb-6">
         Track your thoughts, moods, and personal growth
       </p>
-      {/* Updated Nav Section */}
       <nav className="flex justify-center mt-4">
-        {/* On small screens (mobile), flex-col will stack items. On sm screens and up, flex-row will place them side-by-side. */}
         <div className="flex flex-col sm:flex-row sm:space-x-1 p-1 bg-white dark:bg-gray-800 rounded-lg shadow-md">
           {tabs.map((tab) => (
             <button
