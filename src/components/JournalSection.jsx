@@ -69,7 +69,7 @@ export const JournalSection = () => {
       ) : (
         <>
           <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-semibold text-primary dark:text-gray-200">
+            <h2 className="text-2xl font-semibold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
               Your Journal
             </h2>
             <button
