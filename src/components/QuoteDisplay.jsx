@@ -13,7 +13,7 @@ export const QuoteDisplay = ({
     setLoading(true);
     try {
       // Using a CORS proxy to access the ZenQuotes API
-      const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquotes.io/api/random'));
+      const response = await fetch('https://zenquotes.io/api/random'));
       const data = await response.json();
       if (data.contents) {
         const quoteData = JSON.parse(data.contents)[0];
